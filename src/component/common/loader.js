@@ -3,7 +3,6 @@ import Wrapper from '../wrapper'
 import ChildWrapper from '../childWrapper'
 
 const Loader = (props) => {
-console.log("props in loader", props);
 return <>
 
 <div className="loader"/>

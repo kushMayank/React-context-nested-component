@@ -1,6 +1,7 @@
 import React,{useState, useEffect}  from 'react';
 import Loader from './common/loader';
 import Profile from './profile'
+import Loginform from './loginform'
 
 export const homeContext = React.createContext();
 
@@ -42,6 +43,7 @@ let obj = {
     ary:[1,2,3]
 }
 return <homeContext.Provider value={user}>
+    <Loginform/>
     <h1 style={{"background-color": `${color}`}}>Home  {count} {color} {JSON.stringify(user.results[0].picture)}</h1>
     <Profile/>
     <button   onClick={()=>setcount(count+1)}  >CLICK ME</button>
